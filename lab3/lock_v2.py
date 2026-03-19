@@ -16,6 +16,7 @@ for code in range(0, 9999):
     ok = ok and (a + b + c + d == 29)
 
     # check that code is divisible by 13
+    code = 1000 * a + 100 * b + 10 * c + d
     ok = ok and ((code * code - 1) % 13 == 0)
 
     if ok:
